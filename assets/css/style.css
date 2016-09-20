@@ -82,7 +82,7 @@ a {
   transition: background 0.05s ease-out;
 }
 a:hover {
-  background: #adb3d6;
+  background: #c2e699;
 }
 article {
   max-width: 750px;

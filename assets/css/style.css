@@ -30,11 +30,11 @@ h1 {
 h2 {
   font-size: 32px;
   font-style: italic;
-  color: #934e9d;
+  color: #006837;
   margin: 30px 0 20px 0;
 }
 h3 {
-  color: #934e9d;
+  color: #006837;
   font-size: 20px;
   font-weight: 500;
   margin: 20px 0 8px 0;
@@ -78,7 +78,7 @@ p {
   margin: 0 0 30px 0;
 }
 a {
-  color: #4e589d;
+  color: #006837;
   transition: background 0.05s ease-out;
 }
 a:hover {
@@ -105,8 +105,8 @@ article {
 .example {
   display: flex;
   margin: 35px 0 40px 0;
-  background: #cfd2e7;
-  color: #934e9d;
+  background: #ffffcc;
+  color: #006837;
   padding: 30px 35px;
 }
 .example .title {
@@ -136,7 +136,7 @@ article {
   top: 4px;
   height: calc(100% - 8px);
   position: absolute;
-  background: #ab69b5;
+  background: #c2e699;
 }
 .example .content p:last-child {
   margin: 0;
@@ -167,14 +167,14 @@ article {
   left: 0;
   top: 5px;
   position: absolute;
-  background: #ab69b5;
+  background: #c2e699;
 }
 .meta-information .details {
   flex: 1;
 }
 .meta-information .details time,
 .meta-information .details .difficulty {
-  color: #934e9d;
+  color: #006837;
   font-weight: 700;
   margin-bottom: 3px;
   display: block;
@@ -201,7 +201,7 @@ article {
   margin-bottom: 0;
 }
 aside {
-  background: #4e589d;
+  background: #78c679;
   position: fixed;
   height: 100vh;
   width: 230px;
@@ -231,17 +231,17 @@ nav a {
 }
 nav a.selected,
 nav a.selected:hover {
-  background: #934e9d;
+  background: #006837;
   color: white;
   font-weight: 500;
 }
 nav a:hover {
-  background: #934e9d;
+  background: #31a354;
   color: #ffffff;
 }
 nav a:after {
   content: "";
-  background: url(../images/nav-selected-indicator_violeta.svg);
+  background: url(../assets/images/nav-selected-indicator_violeta.svg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -270,7 +270,7 @@ nav a.selected:after {
   font-size: 22px;
   margin: 0 0 6px 0;
   padding: 0;
-  color: #934e9d;
+  color: #006837;
 }
 .steps time {
   margin: 0 0 10px 0;
@@ -298,7 +298,7 @@ nav a.selected:after {
   position: absolute;
   bottom: -2px;
   height: 2px;
-  background: #ab69b5;
+  background: #c2e699;
   width: 35%;
   left: calc(22% + 50px);
 }
@@ -315,8 +315,8 @@ nav a.selected:after {
   top: -10px;
   font-weight: 400;
   font-size: 22px;
-  color: #934e9d;
-  border: solid 2px #ab69b5;
+  color: #006837;
+  border: solid 2px #c2e699;
   height: 43px;
   width: 43px;
   text-align: center;
@@ -427,7 +427,7 @@ table.altrowstable {
   font-size: 11px;
   color: #333333;
   border-width: 1px;
-  border-color: #934e9d;
+  border-color: #006837;
   border-collapse: collapse;
   width: 100%;
 }
@@ -435,17 +435,17 @@ table.altrowstable th {
   border-width: 1px;
   padding: 8px;
   border-style: solid;
-  border-color: #934e9d;
+  border-color: #006837;
 }
 table.altrowstable td {
   border-width: 1px;
   padding: 8px;
   border-style: solid;
-  border-color: #934e9d;
+  border-color: #006837;
 }
 .oddrowcolor {
-  background-color: #ab69b5;
+  background-color: #c2e699;
 }
 .evenrowcolor {
-  background-color: #cfd2e7;
+  background-color: #ffffcc;
 }

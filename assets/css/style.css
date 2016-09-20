@@ -241,7 +241,7 @@ nav a:hover {
 }
 nav a:after {
   content: "";
-  background: url(../assets/images/nav-selected-indicator_violeta.svg);
+  background: url(/assets/images/nav-selected-indicator_violeta.svg);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: contain;

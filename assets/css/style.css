@@ -1,13 +1,3 @@
-/*
-  Do not make manual changes to this stylesheet.
-  To make style changes, edit the "style-dev.less" file while previewing the /dev_template/index.html file.
-  When you're ready, use http://lesscss.org/less-preview/ to compile the .less file into CSS and
-  replace the CSS below this message with the output.
-  Note: for background images from the assets folder.. remove "assets" from the url() delaration
-  This -    background: url(../assets/images/nav-selected-indicator.svg);
-  Becomes - background: url(../images/nav-selected-indicator.svg);
-*/
-
 body {
   font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -201,7 +191,7 @@ article {
   margin-bottom: 0;
 }
 aside {
-  background: #78c679;
+  background: #7bbf3a;
   position: fixed;
   height: 100vh;
   width: 230px;

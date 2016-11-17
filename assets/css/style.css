@@ -226,7 +226,7 @@ nav a {
   position: relative;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
-  padding: 18px 34px;
+  padding: 9px 34px;
   transition: background 0.05s ease-out;
 }
 nav a.selected,

@@ -26,13 +26,12 @@
   		  <h4><a class="selected" href="#about">About</a></h4>
         <br>
         <h4><a href="#project1">Unmarked population models</a></h4>
-        <em><a href="#project12017">&nbsp;&nbsp;&#8226; 2016</a></em>
+        <em><a href="#project12017">&nbsp;&nbsp;&#8226; 2017</a></em>
         <em><a href="#project12016">&nbsp;&nbsp;&#8226; 2016</a></em>
         <em><a href="#project12014">&nbsp;&nbsp;&#8226; 2014</a></em>
         <br>
   		  <h4><a href="#project2">Monarch butterfly populations</a></h4>
         <em><a href="#project22016">&nbsp;&nbsp;&#8226; 2016</a></em>
-        <em><a href="#project2indev">&nbsp;&nbsp;&#8226; In development</a></em>
         <br>
         <h4><a href="#project3">Breakpoint analysis</a></h4>
         <em><a href="#project3indev">&nbsp;&nbsp;&#8226; In development</a></em>
@@ -72,7 +71,7 @@
   <section class="title">
     <h1>Integrating count and detection–nondetection data to model population dynamics</h1>
     <p>Full text available <a href="http://onlinelibrary.wiley.com/doi/10.1002/ecy.1831/abstract">here.</a></p>
-    <img src="assets/images/Zipkin2017Ecology.png" alt="Figure 4" height="150" width="200">
+    <img src="assets/images/Zipkin2017Ecology.png" alt="Figure 4" height="140" width="200">
   </section>
   <section class="content">
     <p>
@@ -82,7 +81,7 @@
       <strong>Abstract</strong> - There is increasing need for methods that integrate multiple data types into a single analytical framework as the spatial and temporal scale of ecological research expands. Current work on this topic primarily focuses on combining capture–recapture data from marked individuals with other data types into integrated population models. Yet, studies of species distributions and trends often rely on data from unmarked individuals across broad scales where local abundance and environmental variables may vary. We present a modeling framework for integrating detection–nondetection and count data into a single analysis to estimate population dynamics, abundance, and individual detection probabilities during sampling. Our dynamic population model assumes that site-specific abundance can change over time according to survival of individuals and gains through reproduction and immigration. The observation process for each data type is modeled by assuming that every individual present at a site has an equal probability of being detected during sampling processes. We examine our modeling approach through a series of simulations illustrating the relative value of count vs. detection–nondetection data under a variety of parameter values and survey configurations. We also provide an empirical example of the model by combining long-term detection–nondetection data (1995–2014) with newly collected count data (2015–2016) from a growing population of Barred Owl (Strix varia) in the Pacific Northwest to examine the factors influencing population abundance over time. Our model provides a foundation for incorporating unmarked data within a single framework, even in cases where sampling processes yield different detection probabilities. This approach will be useful for survey design and to researchers interested in incorporating historical or citizen science data into analyses focused on understanding how demographic rates drive population abundance.
     </p>
     <p>
-      <strong>Code</strong> - <a href="https://github.com/ezipkin/Integrated-Count-and-Occupancy-model-Zipkin-et-al.-Ecology-2017">Link to code</a>
+      <strong>Code</strong> - <a href="https://github.com/ezipkin/Integrated-Count-and-Occupancy-model-Zipkin-et-al.-Ecology-2017">Link to code and data</a>
     </p>
   </section>
 </section>
@@ -171,30 +170,35 @@
         </p>
       </section>
     </section>
-    <h3 id="project2indev">In development</h3>
-    <section class="example">
-      <section class="title">
-        <h1>The Monarch Regime project</h1>
-        <p>This project is currently in development.</p>
-      </section>
-      <section class="content">
-        <p>
-          <strong>Citation</strong> - <a href="https://github.com/cbahlai">C.A. Bahlai</a> and <a href="https://github.com/ezipkin">E.F. Zipkin</a>
-        </p>
-        <p>
-          <strong>Abstract</strong> - Can we detect changes to the dynamic rule governing monarch populations? Are these changes consistent among populations? Project in development.
-        </p>
-        <p>
-          <strong>Code</strong> - <a href="https://github.com/cbahlai/monarch_regime">Link to code</a>
-        </p>
 
-      </section>
-    </section>
 
 <!-- Project 3 -->
         <h2 id="project3">Breakpoint analysis</h2>
         <p>Understanding when changes occur in dynamic systems is not trivial when multiple drivers are in play. Yet this understanding is critical for making managment decisions. We are developing tools to understand when changes are occuring in dynamic systems, and conducting cross-diciplinary analysis to understand how the length of time we observe a system affects our conclusions about that system.</p>
         <h3 id="project3indev">In development</h3>
+        <section class="example">
+          <section class="title">
+            <h1>The Dynamic Regime Shift detector project</h1>
+            <p>This project is currently in development.</p>
+            <img src="assets/images/bahlai_regime_shift.png" alt="simulation outputs for shift size" height="400" width="200">
+          </section>
+          <section class="content">
+            <p>
+              <strong>Citation</strong> - <a href="https://github.com/cbahlai">C.A. Bahlai</a> and <a href="https://github.com/ezipkin">E.F. Zipkin</a>
+
+            </p>
+            <p>
+              <strong>Abstract</strong> - Understanding how and when environmental factors interact with density dependent internal population regulation remains a fundamental question in ecology. Pinpointing when sustained state changes occur in naturally fluctuating populations has remained unresolved. Yet, an analytical approach which allows the identification of timing and magnitude of such changes would advance our understanding and have the potential to direct the management of species of economic or conservation concern.
+              We develop a generalizable tool, the “Regime Shift Detector” for adapting a simple density dependent model to detecting shifts in dynamic regime in population time series data. This tool was developed as a suite of functions for examining population time series data for the presence, location, and magnitude of shifts, using an iterative approach to fitting the Ricker model on subsets of the time series, and ranking the fit of the break point combination using model selection. We examined the performance of this tool with simulated data and two real-world case studies of involving 20-year population time series datasets documenting species of conservation and economic concern.
+              We found that under low sampling error conditions, the regime shift detector tool was able to identify no shift scenarios in approximately 60% of cases, and identify shifts in 1, 2 and 3 break scenarios in ≥80% of cases, although its performance declined as sampling error increased. In our case study examining the invasion process of Harmonia axyridis, the regime shift detector identified shifts in population cycling associated with prey availability. However, the case study examine population cycling in Monarch butterflies, the regime shift detector tool’s results were more ambiguous, suggesting multiple super-imposed processes were involved in the decline of this species.
+              When interpreted in the context of known species biology, the regime shift detector script has the potential to aide management decisions and identify, and rank critical drivers of change in a species internal dynamics. In an era of rapid global change affecting species dynamics, it is critical to use tools which allow better understanding of changes to internal regulators of population, and not base management decisions on population numbers alone.
+            </p>
+            <p>
+              <strong>Code</strong> - <a href="https://github.com/cbahlai/monarch_regime">Link to code</a>
+            </p>
+
+          </section>
+        </section>
         <section class="example">
           <section class="title">
             <h1>The Bad Breakup project</h1>

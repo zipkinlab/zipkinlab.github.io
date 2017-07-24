@@ -25,7 +25,7 @@
   		<nav>
   		  <h4><a class="selected" href="#about">About</a></h4>
         <br>
-        <h4><a href="#dataintegration">Data Integration Models</a></h4>
+        <h4><a href="#dataintegration">Data integration models</a></h4>
         <em><a href="#dataintegration2017">&nbsp;&nbsp;&#8226; 2017</a></em>
         <em><a href="#dataintegration2016">&nbsp;&nbsp;&#8226; 2016</a></em>
         <em><a href="#dataintegrationindev">&nbsp;&nbsp;&#8226; In development</a></em>
@@ -54,7 +54,7 @@
 	<!-- TITLE -->
       <h1>Zipkin Lab Code Archive</h1>
       <p>
-      <h3><em>Note: this website is a living document. We list both completed projects and those that are in development on this page. For projects in development, some information may be incomplete. You can watch our progress (or join in!) from <a href="https://github.com/zipkinlab/zipkinlab.github.io">this repo. For the most up-to-date versions of in-development work, consult the lead author's github profile. For code developed by Zipkin lab members for outside collaborations, contact that study's lead author.</a>
+      <h3><em>Note: this website is a living document. We list both completed projects and those that are in development on this page. For projects in development, some information may be incomplete. You can watch our progress (or join in!) from <a href="https://github.com/zipkinlab/zipkinlab.github.io">this repo.</a> For the most up-to-date versions of in-development work, consult the lead author's github profile. For code developed by Zipkin lab members for outside collaborations, contact that study's lead author.
       </p>
        <br></em></h3>
 
@@ -190,7 +190,7 @@
 <p>We develop models to estimate the abundance, distribution, and demographic rates of populations using "unmarked data," or data types that do not track individuals. These efforts allow us to quantitatively evaluate important life history parameters with less sampling effort than is traditionally required by mark-recapture studies.</p>
 
 </section>
-<h3 id="project12016">2016</h3>
+<h3 id="unmarked2016">2016</h3>
 <section class="example">
   <section class="title">
     <h1>Dynamic N-occupancy models: estimating demographic rates and local abundance from detection-nondetection data</h1>
@@ -208,7 +208,7 @@
     </p>
   </section>
 </section>
-<h3 id="project12014">2014</h3>
+<h3 id="unmarked2014">2014</h3>
     <section class="example">
       <section class="title">
         <h1>Modeling structured population dynamics using data from unmarked individuals</h1>
@@ -249,57 +249,120 @@
 
 
 
-<!-- Project 3 -->
-        <h2 id="project3">Breakpoint analysis</h2>
-        <p>Understanding when changes occur in dynamic systems is not trivial when multiple drivers are in play. Yet this understanding is critical for making managment decisions. We are developing tools to understand when changes are occuring in dynamic systems, and conducting cross-diciplinary analysis to understand how the length of time we observe a system affects our conclusions about that system.</p>
-        <h3 id="project3indev">In development</h3>
+<!-- Project -->
+        <h2 id="community">Community analyses</h2>
+        <p>Understanding how sampling efficiency affects community metrics is essential for understanding community-environment interactions.</p>
+        <h3 id="communityBasic">Basic examples</h3>
         <section class="example">
           <section class="title">
-            <h1>The Dynamic Regime Shift detector project</h1>
-            <p>This project is currently in development.</p>
-            <img src="assets/images/bahlai_regime_shift.png" alt="simulation outputs for shift size" height="350" width="200">
-          </section>
-          <section class="content">
-            <p>
-              <strong>Citation</strong> - <a href="https://github.com/cbahlai">C.A. Bahlai</a> and <a href="https://github.com/ezipkin">E.F. Zipkin</a>
-
-            </p>
-            <p>
-              <strong>Abstract</strong> - Understanding how and when environmental factors interact with density dependent internal population regulation remains a fundamental question in ecology. Pinpointing when sustained state changes occur in naturally fluctuating populations has remained unresolved. Yet, an analytical approach which allows the identification of timing and magnitude of such changes would advance our understanding and have the potential to direct the management of species of economic or conservation concern.
-              We develop a generalizable tool, the “Regime Shift Detector” for adapting a simple density dependent model to detecting shifts in dynamic regime in population time series data. This tool was developed as a suite of functions for examining population time series data for the presence, location, and magnitude of shifts, using an iterative approach to fitting the Ricker model on subsets of the time series, and ranking the fit of the break point combination using model selection. We examined the performance of this tool with simulated data and two real-world case studies of involving 20-year population time series datasets documenting species of conservation and economic concern.
-              We found that under low sampling error conditions, the regime shift detector tool was able to identify no shift scenarios in approximately 60% of cases, and identify shifts in 1, 2 and 3 break scenarios in ≥80% of cases, although its performance declined as sampling error increased. In our case study examining the invasion process of Harmonia axyridis, the regime shift detector identified shifts in population cycling associated with prey availability. However, the case study examine population cycling in Monarch butterflies, the regime shift detector tool’s results were more ambiguous, suggesting multiple super-imposed processes were involved in the decline of this species.
-              When interpreted in the context of known species biology, the regime shift detector script has the potential to aide management decisions and identify, and rank critical drivers of change in a species internal dynamics. In an era of rapid global change affecting species dynamics, it is critical to use tools which allow better understanding of changes to internal regulators of population, and not base management decisions on population numbers alone.
-            </p>
-            <p>
-              <strong>Code</strong> - <a href="https://github.com/cbahlai/monarch_regime">Link to code</a>
-            </p>
-
-          </section>
-        </section>
-        <section class="example">
-          <section class="title">
-            <h1>The Bad Breakup project</h1>
+            <h1>Sample</h1>
             <p>This project is currently in development.</p>
             <img src="assets/images/lampyrid_timeseries.png" alt="lampyrid timeseries" height="120" width="200">
           </section>
           <section class="content">
             <p>
-              <strong>Citation</strong> - <a href="https://github.com/cbahlai">C.A. Bahlai</a>, <a href="https://github.com/ezipkin">E.F. Zipkin</a> and I. Gelfand
+              <strong>Citation</strong> - Sample
             </p>
             <p>
-              <strong>Abstract</strong> - How do different break points and starting points in our time series affect our ability to detect trends? Project in development.
+              <strong>Abstract</strong> - Sample
             </p>
             <p>
-              <strong>Code</strong> - <a href="https://github.com/cbahlai/bad_breakup">Link to code</a>
+              <strong>Code</strong> - <a href="">Link to code</a>
             </p>
 
           </section>
         </section>
+        <h3 id="communityindev">In development</h3>
+        <section class="example">
+          <section class="title">
+            <h1>Sample</h1>
+            <p>This project is currently in development.</p>
+            <img src="assets/images/lampyrid_timeseries.png" alt="lampyrid timeseries" height="120" width="200">
+          </section>
+          <section class="content">
+            <p>
+              <strong>Citation</strong> - Sample
+            </p>
+            <p>
+              <strong>Abstract</strong> - Sample
+            </p>
+            <p>
+              <strong>Code</strong> - <a href="">Link to code</a>
+            </p>
+
+          </section>
+        </section>
+<!-- Project -->
+                <h2 id="other">Other Modelling projects</h2>
+                <p>Projects involving other techniques</p>
+                <h3 id="other2016">2016</h3>
+                <section class="example">
+                  <section class="title">
+                    <h1>Sample</h1>
+                    <p>This project is currently in development.</p>
+                    <img src="assets/images/lampyrid_timeseries.png" alt="lampyrid timeseries" height="120" width="200">
+                  </section>
+                  <section class="content">
+                    <p>
+                      <strong>Citation</strong> - Sample
+                    </p>
+                    <p>
+                      <strong>Abstract</strong> - Sample
+                    </p>
+                    <p>
+                      <strong>Code</strong> - <a href="">Link to code</a>
+                    </p>
+
+                  </section>
+                </section>
+                <h3 id="otherindev">In development</h3>
+                <section class="example">
+                  <section class="title">
+                    <h1>The Dynamic Regime Shift detector project</h1>
+                    <p>This project is currently in development.</p>
+                    <img src="assets/images/bahlai_regime_shift.png" alt="simulation outputs for shift size" height="350" width="200">
+                  </section>
+                  <section class="content">
+                    <p>
+                      <strong>Citation</strong> - <a href="https://github.com/cbahlai">C.A. Bahlai</a> and <a href="https://github.com/ezipkin">E.F. Zipkin</a>
+
+                    </p>
+                    <p>
+                      <strong>Abstract</strong> - Understanding how and when environmental factors interact with density dependent internal population regulation remains a fundamental question in ecology. Pinpointing when sustained state changes occur in naturally fluctuating populations has remained unresolved. Yet, an analytical approach which allows the identification of timing and magnitude of such changes would advance our understanding and have the potential to direct the management of species of economic or conservation concern.
+                      We develop a generalizable tool, the “Regime Shift Detector” for adapting a simple density dependent model to detecting shifts in dynamic regime in population time series data. This tool was developed as a suite of functions for examining population time series data for the presence, location, and magnitude of shifts, using an iterative approach to fitting the Ricker model on subsets of the time series, and ranking the fit of the break point combination using model selection. We examined the performance of this tool with simulated data and two real-world case studies of involving 20-year population time series datasets documenting species of conservation and economic concern.
+                      We found that under low sampling error conditions, the regime shift detector tool was able to identify no shift scenarios in approximately 60% of cases, and identify shifts in 1, 2 and 3 break scenarios in ≥80% of cases, although its performance declined as sampling error increased. In our case study examining the invasion process of Harmonia axyridis, the regime shift detector identified shifts in population cycling associated with prey availability. However, the case study examine population cycling in Monarch butterflies, the regime shift detector tool’s results were more ambiguous, suggesting multiple super-imposed processes were involved in the decline of this species.
+                      When interpreted in the context of known species biology, the regime shift detector script has the potential to aide management decisions and identify, and rank critical drivers of change in a species internal dynamics. In an era of rapid global change affecting species dynamics, it is critical to use tools which allow better understanding of changes to internal regulators of population, and not base management decisions on population numbers alone.
+                    </p>
+                    <p>
+                      <strong>Code</strong> - <a href="https://github.com/cbahlai/monarch_regime">Link to code</a>
+                    </p>
+
+                  </section>
+                </section>
+                <section class="example">
+                  <section class="title">
+                    <h1>The Bad Breakup project</h1>
+                    <p>This project is currently in development.</p>
+                    <img src="assets/images/lampyrid_timeseries.png" alt="lampyrid timeseries" height="120" width="200">
+                  </section>
+                  <section class="content">
+                    <p>
+                      <strong>Citation</strong> - <a href="https://github.com/cbahlai">C.A. Bahlai</a>, <a href="https://github.com/ezipkin">E.F. Zipkin</a> and I. Gelfand
+                    </p>
+                    <p>
+                      <strong>Abstract</strong> - How do different break points and starting points in our time series affect our ability to detect trends? Project in development.
+                    </p>
+                    <p>
+                      <strong>Code</strong> - <a href="https://github.com/cbahlai/bad_breakup">Link to code</a>
+                    </p>
+
+                  </section>
+                </section>
 
   <!-- add new projects here -->
 
   <!-- if we need more -->
-  	<h2 id="other">More information</h2>
+  	<h2 id="more">More information</h2>
 <ol class="steps">
     <!-- other -->
       <li>

@@ -223,7 +223,7 @@ nav a.selected,
 nav a.selected:hover {
   background: #006837;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
 }
 nav a:hover {
   background: #31a354;

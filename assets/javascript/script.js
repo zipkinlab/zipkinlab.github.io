@@ -48,6 +48,8 @@ $(document).ready(function(){
       scroll();
     }
   });
+  
+  $('.image-link').magnificPopup({type:'image'});
 
 });
 

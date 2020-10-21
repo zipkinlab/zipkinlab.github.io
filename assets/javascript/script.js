@@ -50,7 +50,7 @@ $(document).ready(function(){
   });
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.querySelectorAll("modal-img");
+var img = document.getElementsByClassName("modal-img");
 var modals = document.querySelectorAll('.modal');
 var spans = document.getElementsByClassName("close");
 

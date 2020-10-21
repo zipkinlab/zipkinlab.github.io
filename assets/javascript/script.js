@@ -49,32 +49,33 @@ $(document).ready(function(){
     }
   });
 
-  // Get the modal
-//var modal = document.getElementsByClassName(".modal");
-  
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName(".modal-img");
-//var modalImg = document.getElementsByClassName(".modal-content");
-//var captionText = document.getElementsByClassName(".modal-caption");
+var img = document.querySelectorAll("modal-img");
+var modals = document.querySelectorAll('.modal');
+var spans = document.getElementsByClassName("close");
 
 for (var i = 0; i < img.length; i++) {
-  var image = img[i];
-  var modal = document.getElementsByClassName(".modal")[i];
-  var modimage = document.getElementsByClassName(".modal-content")[i];
-  var modcaption = document.getElementsByClassName(".modal-caption")[i];
-  image.onclick = function(evt) {
+  img[i].onclick = funcion(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("alt"));
     modal.style.display = "block";
-    modimage.src = this.src;
-    modcaption.innerHTML = this.alt;
   }
 }
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
+  
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+  
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
 }
   
 });

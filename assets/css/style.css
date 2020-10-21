@@ -440,19 +440,11 @@ table.altrowstable td {
   background-color: #ffffcc;
 }
 /* Style the Image Used to Trigger the Modal */
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
 .model-img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
-
-#myImg:hover {opacity: 0.7;}
 
 .model-img:hover {
   opacity: 0.7;
@@ -482,17 +474,6 @@ table.altrowstable td {
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
 .modal-caption {
   margin: auto;
   display: block;
@@ -505,7 +486,7 @@ table.altrowstable td {
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
+.modal-content, .modal-caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }

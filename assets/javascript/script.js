@@ -56,14 +56,14 @@ var modimg = document.getElementsByClassName("modal-content");
 var modcaption = document.getElementsByClassName("modal-caption");
 var spans = document.getElementsByClassName("close");
 
-for (var i = 0; i < img.length; i++) {
-  img[i].onclick = funcion(e) {
-    e.preventDefault();
-    name = document.querySelector(e.target.getAttribute("alt"));
-    var modal = document.getElementById('name');
-    modal.style.display = "block";
-  }
-}
+//for (var i = 0; i < img.length; i++) {
+//  img[i].onclick = funcion(e) {
+//    e.preventDefault();
+//    name = document.querySelector(e.target.getAttribute("alt"));
+//    var modal = document.getElementById('name');
+//    modal.style.display = "block";
+//  }
+//}
   
 img[0].onclick = function(e) {
   modals[0].style.display = "block";

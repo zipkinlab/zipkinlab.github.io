@@ -59,10 +59,13 @@ var captionText = document.getElementsByClassName(".modal-caption");
 
 for (var i = 0; i < img.length; i++) {
   var image = img[i];
+  var mod = modal[i];
+  var modimage = modalImg[i];
+  var modcaption = captionText[i];
   image.onclick = function(evt) {
-    modal[i].style.display = "block";
-    modalImg[i].src = this.src;
-    captionText.innerHTML = this.alt;
+    mod.style.display = "block";
+    modimage.src = this.src;
+    modcaption.innerHTML = this.alt;
   }
 }
 

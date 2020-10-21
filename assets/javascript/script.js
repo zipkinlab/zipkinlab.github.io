@@ -51,7 +51,7 @@ $(document).ready(function(){
 
   // Get the modal
 //var modal = document.getElementById("myModal");
-var modal = document.getElementByClassName("modal")
+var modal = document.getElementByClassName("modal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementByClassName("modal-img");

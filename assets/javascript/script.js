@@ -59,9 +59,9 @@ var img = document.getElementsByClassName(".modal-img");
 
 for (var i = 0; i < img.length; i++) {
   var image = img[i];
-  var modal = document.getElementsByClassName(".modal-img")[i].getElementsByClassName(".modal")[0];
-  var modimage = document.getElementsByClassName(".modal-img")[i].getElementsByClassName(".modal-content")[0];
-  var modcaption = document.getElementsByClassName(".modal-img")[i].getElementsByClassName(".modal-caption")[0];
+  var modal = document.getElementsByClassName(".modal")[i];
+  var modimage = document.getElementsByClassName(".modal-content")[i];
+  var modcaption = document.getElementsByClassName(".modal-caption")[i];
   image.onclick = function(evt) {
     modal.style.display = "block";
     modimage.src = this.src;

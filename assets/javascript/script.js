@@ -57,7 +57,8 @@ var spans = document.getElementsByClassName("close");
 for (var i = 0; i < img.length; i++) {
   img[i].onclick = funcion(e) {
     e.preventDefault();
-    modal = document.querySelector(e.target.getAttribute("alt"));
+    name = document.querySelector(e.target.getAttribute("alt"));
+    var model = document.getElementById('name');
     modal.style.display = "block";
   }
 }

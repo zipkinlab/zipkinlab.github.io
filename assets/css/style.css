@@ -440,7 +440,7 @@ table.altrowstable td {
   background-color: #ffffcc;
 }
 /* Style the Image Used to Trigger the Modal */
-/*.modal-img {
+.modal-img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -448,7 +448,7 @@ table.altrowstable td {
 
 .modal-img:hover {
   opacity: 0.7;
-}*/
+}
 
 /* The Modal (background) */
 .modal {

@@ -56,11 +56,11 @@ $(document).ready(function(){
 //var modcaption = document.getElementsByClassName(".modal-caption");
 //var spans = document.getElementsByClassName(".close")[0];
   
-var img = document.querySelectorAll(".modal-img");
+var img = document.querySelectorAll("img.modal-img");
 var modals = document.querySelectorAll(".modal");
 var modimg = document.querySelectorAll(".modal-content");
 var modcaption = document.querySelectorAll(".modal-caption");
-var spans = document.querySelectorAll(".close");
+var spans = document.querySelectorAll("close");
 
 for (var i = 0; i < img.length; i++) {
   img[i].onclick = funcion(e) {

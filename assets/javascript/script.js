@@ -73,13 +73,13 @@ var spans = document.getElementsByClassName(".close")[0];
 //}
   
 img[0].onclick = function() {
-  modals.style.display = "block";
-  modimg.src = this.src;
-  modcaption.innerHTML = this.alt;
+  modals[0].style.display = "block";
+  modimg[0].src = this.src;
+  modcaption[0].innerHTML = this.alt;
 }
   
-span.onclick = function() {
-  modal.style.display = 'none';
+span[0].onclick = function() {
+  modals[0].style.display = 'none';
 }
   
 //for (var i = 0; i < spans.length; i++) {

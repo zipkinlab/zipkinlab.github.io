@@ -65,7 +65,7 @@ var spans = document.querySelectorAll("close");
 for (var i = 0; i < img.length; i++) {
   img[i].onclick = funcion(e) {
     e.preventDefault();
-    modal = document.querySelector(e.target.getAttribute("alt"));
+    modal = document.querySelector(e.target.getAttribute("href"));
     modal.style.display = "block";
     modimg.src = this.src;
     modcaption.innerHTML = this.alt;

@@ -50,12 +50,12 @@ $(document).ready(function(){
   });
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-//var img = document.getElementsByClassName(".modal-img");
-//var modals = document.getElementsByClassName(".modal");
-//var modimg = document.getElementsByClassName(".modal-content");
-//var modcaption = document.getElementsByClassName(".modal-caption");
-//var spans = document.getElementsByClassName(".close")[0];
-  
+var img = document.getElementsByClassName(".modal-img");
+var modals = document.getElementsByClassName(".modal");
+var modimg = document.getElementsByClassName(".modal-content");
+var modcaption = document.getElementsByClassName(".modal-caption");
+var spans = document.getElementsByClassName(".close")[0];
+ 
 //var img = document.querySelectorAll("img.modal-img");
 //var modals = document.querySelectorAll(".modal");
 //var modimg = document.querySelectorAll(".modal-content");
@@ -72,11 +72,15 @@ $(document).ready(function(){
 //  }
 //}
   
-//img.onclick = function() {
-//  modals.style.display = "block";
-//  modimg.src = this.src;
-//  modcaption.innerHTML = this.alt;
-//}
+img[0].onclick = function() {
+  modals.style.display = "block";
+  modimg.src = this.src;
+  modcaption.innerHTML = this.alt;
+}
+  
+span.onclick = function() {
+  modal.style.display = 'none';
+}
   
 //for (var i = 0; i < spans.length; i++) {
 // spans[i].onclick = function() {
@@ -109,31 +113,3 @@ function scroll(){
     }
   });
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-
-  let modal = document.querySelector('.modal');
-  let modalContent = document.querySelector('.modal-content');
-  let img = document.querySelectorAll("img.modal-img");
-  let modcaption = document.getElementsByClassName(".modal-caption");
-  let closeSpan = document.querySelector('.close');
-  
-  img.addEventListener('click', function() {
-    console.log('img click');
-    console.log(modal);
-    modal.style.display = 'block'; 
-    modimg.src = this.src;
-    modcaption.innerHTML = this.alt;
-  });
-  
-  closeSpan.addEventListener('click', function() {
-    modal.style.display = 'none';  
-  });
-  
-  modal.addEventListener('click', function(event) {
-    console.log(event.target.class);
-    if(event.target.class === 'modal') }
-      modal.style.display = 'none';
-    } 
-  });  
-});

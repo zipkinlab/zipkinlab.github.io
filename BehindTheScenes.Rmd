@@ -14,11 +14,11 @@ Code to do so if the repo is cloned to your computer and edits are done through 
 Move figure from download to assets/images
 Bash script: Ctrl + Alt + Enter on a Windows in RStudio
 ```{bash}
-../../../Downloads/ayebare-et-al-2023-an-environmental-habitat-gradient-and-within-habitat-segregation-enable-co-existence-of-ecologically.pdf assets/images/Ayebare_etal_2023_ProcB.jpg
+mv ../../../Downloads/Gilbert_etal_2024_Ecol.png assets/images/Gilbert_etal_2024_Ecol.png
 
-git add assets/images/Ayebare_etal_2023_ProcB.jpg
+git add assets/images/Gilbert_etal_2024_Ecol.png
 
-git commit -m 'Added Ayebare_etal_2023_ProcB.jpg to images'
+git commit -m 'Added Gilbert_etal_2024_Ecol.png to images'
 ```
 
 Calculate figure size

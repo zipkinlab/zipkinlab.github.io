@@ -1,0 +1,49 @@
+---
+title: "Behind The Scenes - common steps"
+author: "Wendy Leuenberger"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Editing the zipkinlab.github.io repo
+
+Code to do so if the repo is cloned to your computer and edits are done through RStudio. 
+
+### Add the figure
+
+Move figure from download to assets/images
+Bash script: Ctrl + Alt + Enter on a Windows in RStudio
+```{bash}
+../../../Downloads/ayebare-et-al-2023-an-environmental-habitat-gradient-and-within-habitat-segregation-enable-co-existence-of-ecologically.pdf assets/images/Ayebare_etal_2023_ProcB.jpg
+
+git add assets/images/Ayebare_etal_2023_ProcB.jpg
+
+git commit -m 'Added Ayebare_etal_2023_ProcB.jpg to images'
+```
+
+Calculate figure size
+R script: Ctrl + Enter on a Windows in RStudio
+```{r}
+FigSize <- function(OriginalWidth, OriginalHeight, OutputWidth = 200){
+  WidthRatio <- OutputWidth / OriginalWidth
+  OutputHeight <- OriginalHeight * WidthRatio
+  cat(paste0('Width = ', round(OutputWidth), '\nHeight = ', round(OutputHeight)))
+}
+
+FigSize(OriginalWidth = 4500, OriginalHeight = 3000)
+
+```
+
+## Once you've added other text
+
+Add and commit change to front page
+Rerun as needed for additional editing
+Bash script: Ctrl + Alt + Enter on a Windows in RStudio
+```{bash}
+git add index.html
+
+git commit -m 'Added Ayebare_etal_2023_ProcB to front-facing page'
+
+git push
+```
+

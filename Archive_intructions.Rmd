@@ -72,8 +72,8 @@ id_cd <- cbind(id_codes, id_names) %>% as_tibble()
 this_id <- pull(dat[which(dat$data == "section"),2])
 
 id <- paste0(gsub(" ", "",tolower(id_cd[which(id_cd$id_names == this_id),1])),
-            dat[which(dat$data == "year"),2],
-            toupper(substr(dat[which(dat$data == "author1"),2],1,1)))
+             dat[which(dat$data == "year"),2],
+             toupper(substr(dat[which(dat$data == "author1"),2],1,1)))
 
 citation <- dat[which(dat$data == "citation"),2]  %>% pull()
 
@@ -112,11 +112,11 @@ html_content1 <- glue_collapse(glue(" <h3 id='{id}'>{citation}</h3>
     <section class='title'>
       <h1>{title}</h1>
       <img class='modal-img' src='{figure}' alt='{gsub('etal', 'et al.', gsub('_', ' ',citation))}' height='{fig_height2}' width='{fig_width2}' style='background-color:white;' >
-          <div class='modal' id='{gsub('etal', 'et al.', gsub('_', ' ',citation))}'>
-        <span class='close'>&times;</span>
-        <img class='modal-content'>
-        <div class='modal-caption'></div>
-        </div>
+        	<div class='modal' id='{gsub('etal', 'et al.', gsub('_', ' ',citation))}'>
+		    <span class='close'>&times;</span>
+		    <img class='modal-content'>
+		    <div class='modal-caption'></div>
+	      </div>
     </section>
     <section class='content'>
       <p>
@@ -124,14 +124,14 @@ html_content1 <- glue_collapse(glue(" <h3 id='{id}'>{citation}</h3>
 
 
 for(i in 1:numb_authors){
-  
-  author_loop <- glue("author{i}")
-  assign(author_loop, as.character(glue("{pull(dat[which(dat$data == author_loop),2])}")))
+   
+   author_loop <- glue("author{i}")
+   assign(author_loop, as.character(glue("{pull(dat[which(dat$data == author_loop),2])}")))
 
-  gitaut_loop <- glue("github{i}")
-  assign(gitaut_loop, pull(dat[which(dat$data == gitaut_loop),2]))
-  
-  if (is.na(get(gitaut_loop))) {
+   gitaut_loop <- glue("github{i}")
+   assign(gitaut_loop, pull(dat[which(dat$data == gitaut_loop),2]))
+   
+   if (is.na(get(gitaut_loop))) {
         if (i == 1){ ht2 <- paste0(get(author_loop),", ")}
         if (i > 1 & i < numb_authors){ ht2 <- c(ht2, paste0(get(author_loop),", "))}
         if (i ==numb_authors){ ht2 <- c(ht2, paste0(get(author_loop),", "))}
@@ -145,20 +145,19 @@ for(i in 1:numb_authors){
 }
 
 html_content2 <- paste(ht2, collapse = "")
-html_content2 <- glue("{html_content2} ")
 
-html_content3 <- glue_collapse(glue(" ({year}) {title}. <em>{journal}</em>. <a href='{doi_addr}'>DOI: {doi}</a>
+ html_content3 <- glue_collapse(glue("({year}) {title}. <em>{journal}</em>. <a href='{doi_addr}'>DOI: {doi}</a>
       </p>
       <p>
-      <strong>Abstract</strong> - {abstract}
+       <strong>Abstract</strong> - {abstract}
       </p>
       <p>
-      <strong>Code and Data</strong> - <a href='{gitlink}'>Link to repo</a>
+       <strong>Code and Data</strong> - <a href='{gitlink}'>Link to repo</a>
       </p>
     </section>
   </section>"))
 
-html_content <- paste0(html_content1, html_content2, html_content3)
+html_content <- paste0(html_content1, html_content2, " ", html_content3)
 
 ## text
 writeLines(html_content, "git_text.txt")

@@ -1,0 +1,20 @@
+data,info
+section,Data integration models
+citation,Davis_etal_2025_EcoApps
+title,Evaluating environmental drivers and synchrony of Arctic shorebird demographic rates to inform conservation management
+year,2025
+journal,Ecological Applications
+fig_height,2128
+fig_width,2193
+abstract,"Environmental factors affect the population dynamics of migratory species throughout their annual cycles. However, identifying the "
+author1,"Davis, K.L."
+github1,https://github.com/davisk93
+author2,"Lanctot, R.B."
+github2,
+author3,"Saalfeld, S.T."
+github3,
+author4,"Zipkin, E.F."
+github4,https://github.com/zipkinlab
+numb_authors,4
+doi,10.1111/2041-210X.14282
+doi_addr,https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14282

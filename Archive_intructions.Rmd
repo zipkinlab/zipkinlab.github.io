@@ -13,19 +13,27 @@ Steps and information for adding a new GitHub repository to the [Zipkin Lab Code
 
 <b>These are the steps:</b>
 
-<b>1</b> - All repos should be on the Zipkin Lab GitHub and be linked from there (not from personal GitHub accounts) to the front-facing page. So step one is forking someone's repository into it.
+<b>1</b> - All repos should be on the Zipkin Lab GitHub and be linked from there (not from personal GitHub accounts) to the front-facing page. So step one is <b>forking</b> someone's repository into it.
+
+  * Navigate to the repository you want to fork: Open the repository's page on GitHub.
+
+  * Click the "Fork" button: This button is usually located in the top-right corner of the page.
+
+  * Choose the owner and name for the fork: it should be ZIPKINLAB, not your own. You can also change the repository name at this stage.
+
+  * Click "Create fork": GitHub will create a copy of the repository under the lab and repository name. 
 
 <b>2</b> - Make sure all the necessary information is available. There are two documents to use as reference that are on the [Zipkin Lab Teams GitHub page](https://teams.microsoft.com/l/channel/19%3A15762ca26189456f989a45136b141e94%40thread.tacv2/GitHub?groupId=a1e331a0-3ad7-4671-a13e-3629dea6fd3b&tenantId=22177130-642f-41d9-9211-74237ad5687d) (ZipkinLab -> GitHub -> Files):
 
-  * a checklist to keep track of which papers are added, and which information is necessary. This is [GithubProjects.xlsx](https://michiganstate.sharepoint.com/:w:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/Github%20Project%20Checklist.docx?d=w2c29be3eda324515bb264af68f3b242f&csf=1&web=1&e=okdI3w), and you should add info there.
+  * a checklist to keep track of which papers are added and which information is necessary. This is [GithubProjects.xlsx](https://michiganstate.sharepoint.com/:w:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/Github%20Project%20Checklist.docx?d=w2c29be3eda324515bb264af68f3b242f&csf=1&web=1&e=okdI3w), and you should add info there.
 
-  * a document with more detailed intructions on the information that should be present in a repository. This is [Github Project Checklist.docx](https://michiganstate.sharepoint.com/:x:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/GithubProjects.xlsx?d=w6e21ffea9efe45ce993b24157dfe59be&csf=1&web=1&e=8rDe1n)
+  * a document with more detailed instructions on the information that should be present in a repository. This is [Github Project Checklist.docx](https://michiganstate.sharepoint.com/:x:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/GithubProjects.xlsx?d=w6e21ffea9efe45ce993b24157dfe59be&csf=1&web=1&e=8rDe1n)
 
 <b>3</b> - Front-Facing edits:
 
   * edits are done in the [index.html file](https://github.com/zipkinlab/zipkinlab.github.io/blob/master/index.html) (go to the editor!)
 
-  * the html code chunk to add the new information has to be inserted within the paper category (e.g. community models, unmarked population models). New papers go on the top of the section.
+  * the html code chunk to add the new information has to be inserted within the paper category (e.g. community models, unmarked population models). New papers go on top of the section.
 
   * this code creates html code for both the <b>citation short title to go on top</b> (git_title.txt), and the <b>information about the paper and data</b> (git_text.txt)
 

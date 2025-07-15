@@ -156,8 +156,7 @@ There are two documents to use as references (available on the [Zipkin Lab Teams
 
     </details><br>
 
-- Paste the text from `git_text.txt` and `git_title.txt` into the `index.html` file (you have to hit 'edit' and commit it!).
- <br>
+- Paste the text from `git_text.txt` and `git_title.txt` into the `index.html` file (you have to hit 'edit' and commit it!). <br>
  
 - Add a figure (.PNG) to the [assets/images/](https://github.com/zipkinlab/zipkinlab.github.io/tree/master/assets/images) folder on GitHub. The figure name should match the citation (e.g., `Zipkin_etal_2025_MEE.png`).
 

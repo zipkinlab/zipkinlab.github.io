@@ -26,15 +26,15 @@ Steps and information for adding a new GitHub repository to the [Zipkin Lab Code
 
 <b>2</b> - Make sure all the necessary information is available. There are two documents to use as reference that are on the [Zipkin Lab Teams GitHub page](https://teams.microsoft.com/l/channel/19%3A15762ca26189456f989a45136b141e94%40thread.tacv2/GitHub?groupId=a1e331a0-3ad7-4671-a13e-3629dea6fd3b&tenantId=22177130-642f-41d9-9211-74237ad5687d) (ZipkinLab -> GitHub -> Files):
 
-  * a checklist to keep track of which papers are added and which information is necessary. This is [GithubProjects.xlsx](https://michiganstate.sharepoint.com/:w:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/Github%20Project%20Checklist.docx?d=w2c29be3eda324515bb264af68f3b242f&csf=1&web=1&e=okdI3w), and you should add info there.
+  * a checklist to keep track of which papers are added and which information is necessary. This is [GithubProjects.xlsx](https://michiganstate.sharepoint.com/:x:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/GithubProjects.xlsx?d=w6e21ffea9efe45ce993b24157dfe59be&csf=1&web=1&e=8rDe1n), and you should add info there.
 
-  * a document with more detailed instructions on the information that should be present in a repository. This is [Github Project Checklist.docx](https://michiganstate.sharepoint.com/:x:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/GithubProjects.xlsx?d=w6e21ffea9efe45ce993b24157dfe59be&csf=1&web=1&e=8rDe1n)
+  * a document with more detailed instructions on the information that should be present in a repository. This is [Github Project Checklist.docx](https://michiganstate.sharepoint.com/:w:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/Github%20Project%20Checklist.docx?d=w2c29be3eda324515bb264af68f3b242f&csf=1&web=1&e=okdI3w).
 
 <b>3</b> - Front-Facing edits:
 
   * edits are done in the [index.html file](https://github.com/zipkinlab/zipkinlab.github.io/blob/master/index.html) (go to the editor!)
 
-  * the html code chunk to add the new information has to be inserted within the paper category (e.g. community models, unmarked population models). New papers go on top of the section.
+  * the html code chunk to add the new information has to be inserted within the paper category (e.g., community models, unmarked population models). New papers go on top of the section.
 
   * this code creates html code for both the <b>citation short title to go on top</b> (git_title.txt), and the <b>information about the paper and data</b> (git_text.txt)
 
@@ -66,7 +66,7 @@ knitr::kable(dat, format = "html", caption = "Example of Information Needed for 
 + run [this script](https://michiganstate.sharepoint.com/:u:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/github_html.r?csf=1&web=1&e=kJIER0) using the file, or here:
 <br>
 ```{r, eval = F, echo = T}
-## code to create html file for the lab front facing page
+## code to create html file for the lab front-facing page
 
 library(glue)
 library(tidyverse)
@@ -178,15 +178,15 @@ writeLines(html_title, "git_title.txt")
 ```
 
 
-  * you can copy this text and paste on the index.html file - remmember to commit it!
+  * you can copy this text and paste into the index.html file - remember to commit it!
 
-  * add one figure of the paper on the [assets/images/ folder](https://github.com/zipkinlab/zipkinlab.github.io/tree/master/assets/images) on GitHub. The name of the figure should be the same as the repository (e.g. Zipkin_etal_2025_MEE)
+  * add one figure from the paper to the [assets/images/ folder](https://github.com/zipkinlab/zipkinlab.github.io/tree/master/assets/images) on GitHub. The name of the figure should be the same as the repository (e.g., Zipkin_etal_2025_MEE)
 
 <b>4</b> - Add the GitHub data also in the labs' [Archived-data](https://github.com/zipkinlab/Archived-data) repository. 
 <br>
 <br>
 <br>
-YAY you are done!!!
+YAY, you are done!!!
 <br>
 <br>
 <br>

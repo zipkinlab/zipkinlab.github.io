@@ -2,7 +2,7 @@
 title: "Add papers to the Zipkin Lab code archive front-facing page"
 author: "Bruna Amaral"
 date: "`r Sys.Date()`"
-output: html_document
+output: github_document
 ---
 <br>
 Steps and information for adding a new GitHub repository to the [Zipkin Lab Code Archive](https://zipkinlab.github.io/) front-face page, if you are one of the GitHub people. This is the website where all our code and data can live through eternity, and where we can direct people who ask about our analysis or data. The [Lab Code Archive](https://github.com/zipkinlab/zipkinlab.github.io) is one repository that lives within the [Zipkin Lab's GitHub](https://github.com/zipkinlab) page.

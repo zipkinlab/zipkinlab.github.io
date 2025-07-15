@@ -1,7 +1,10 @@
 
-# Adding papers to the Zipkin Lab code archive front-facing page
+<div align="center">
 
+# Adding papers to the Zipkin Lab code archive front-facing page
 **Author:** Bruna Amaral  
+
+</div>
 
 ---
 

@@ -1,5 +1,8 @@
 
 # Adding papers to the Zipkin Lab code archive front-facing page
+
+**Author:** Bruna Amaral  
+
 ---
 
 Here are the steps and information to add a new GitHub repository to the [Zipkin Lab Code Archive](https://zipkinlab.github.io/) front-face page, if you are one of the 'GitHub people'. 
@@ -16,7 +19,7 @@ The lab archive is the website where all our code and data can 'live through ete
 
 ### 1 - Fork personal repository to Zipkin Lab GitHub
 
-All repositories should be on the Zipkin Lab GitHub and linked from there (not from personal GitHub accounts) to the front-facing page. So step one is **forking** someone's repository into it.
+All repositories should be on the [Zipkin Lab GitHub](https://github.com/zipkinlab) and linked from there (not from personal GitHub accounts) to the front-facing page. So step one is **forking** someone's repository into it.
 
 - Navigate to the repository you want to fork.
 - Click the **Fork** button (top-right of the page).
@@ -28,12 +31,12 @@ All repositories should be on the Zipkin Lab GitHub and linked from there (not f
 
 ### 2 - Gather required information
 
-There are two documents to use as references (available on the [Zipkin Lab Teams GitHub page](https://teams.microsoft.com/l/channel/19%3A15762ca26189456f989a45136b141e94%40thread.tacv2/GitHub?groupId=a1e331a0-3ad7-4671-a13e-3629dea6fd3b&tenantId=22177130-642f-41d9-9211-74237ad5687d)):
+There are two documents to use as reference (available on the [Zipkin Lab Teams GitHub page](https://teams.microsoft.com/l/channel/19%3A15762ca26189456f989a45136b141e94%40thread.tacv2/GitHub?groupId=a1e331a0-3ad7-4671-a13e-3629dea6fd3b&tenantId=22177130-642f-41d9-9211-74237ad5687d)) to gather all the info you need:
 
-- A checklist to track added papers:  
+- A checklist to track added papers, and what info you have or are still missing:  
   [GithubProjects.xlsx](https://michiganstate.sharepoint.com/:x:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/GithubProjects.xlsx)
 
-- A document with detailed instructions:  
+- A document with detailed instructions on what each field in the spreadsheet above is:  
   [Github Project Checklist.docx](https://michiganstate.sharepoint.com/:w:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/Github%20Project%20Checklist.docx)
 
 ---
@@ -47,7 +50,7 @@ There are two documents to use as references (available on the [Zipkin Lab Teams
 
 #### Automated version:
 
-- The paper metadata goes into the [github_dat.csv](https://michiganstate.sharepoint.com/:x:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/github_dat.csv) file. Just download it and substitute the fields with the details of the paper you want to add.
+- The paper metadata goes into the [github_dat.csv](https://michiganstate.sharepoint.com/:x:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/github_dat.csv) file template. Just download it and substitute the fields with the details of the paper you want to add.
  
   <details>
   <summary>Click to see code that creates github_dat.csv</summary>
@@ -154,7 +157,7 @@ There are two documents to use as references (available on the [Zipkin Lab Teams
     ````
 
     </details><br>
-- Paste the text from `git_text.txt` and `git_title.txt` into the `index.html` file (you have to hit 'edit' and commit it!). <br>
+- Paste the html code snippets from `git_text.txt` and `git_title.txt` into the [index.html](https://github.com/zipkinlab/zipkinlab.github.io/blob/master/index.html) file (you have to hit 'edit' and commit it!). <br>
  
 - Add a figure (.PNG) to the [assets/images/](https://github.com/zipkinlab/zipkinlab.github.io/tree/master/assets/images) folder on GitHub. The figure name should match the citation (e.g., `Zipkin_etal_2025_MEE.png`).
 
@@ -170,4 +173,4 @@ There are two documents to use as references (available on the [Zipkin Lab Teams
 
 ## 🎉 YAY, you are done!!!
 ---
-**Author:** Bruna Amaral  
+

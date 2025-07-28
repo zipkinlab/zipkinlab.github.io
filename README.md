@@ -56,7 +56,7 @@ There are two documents to use as reference (available on the <a href="https://t
 - The paper metadata goes into the <a href="https://michiganstate.sharepoint.com/:x:/r/sites/STUOT-ResearchGroup/Shared%20Documents/GitHub/github_dat.csv" style="color: #077907ff;">github_dat.csv</a> file template. Just download it and substitute the fields with the details of the paper you want to add.
  
   <details>
-  <summary><span style="color: #077907ff; font-style: italic;">Click to see code from github_html.r</span></summary>
+  <summary><span style="color: #077907ff; font-style: italic;">Click to see code to create the .csv file</span></summary>
 
   ````r
   library(tidyverse)
